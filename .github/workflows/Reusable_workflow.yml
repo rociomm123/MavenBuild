@@ -2,6 +2,5 @@ name: Call the CICD workflow
 on: push
 jobs:
   callCICD:
-    users: ./.github/workflows/main.yml
-    secrets: inherit
-  
+   uses: ./.github/workflows/main.yml
+   secrets: inherit
